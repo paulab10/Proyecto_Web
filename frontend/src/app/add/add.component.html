@@ -1,0 +1,37 @@
+<h2 style="text-align: center">Add a product</h2>
+<div class="form">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="barCode">Bar Code:</label><br>
+      <input type="number" class="form-control" id="barCode" formControlName="id"
+             required [(ngModel)]="product.idProduct" name="barcode">
+    </div>
+
+    <div class="form-group">
+      <label for="productname">Product name:</label><br>
+      <input type="text" class="form-control" id="productname" formControlName="name"
+             required [(ngModel)]="product.name" name="productname">
+    </div>
+
+    <div class="form-group">
+      <label for="productprice">Product price:</label><br>
+      <input type="number" class="form-control" id="productprice"
+             required formControlName="price"
+             [(ngModel)]="product.price" name="productprice">
+    </div>
+
+    <div class="form-group">
+      <label for="productcategory">Product category:</label><br>
+      <input type="text" class="form-control" id="productcategory"
+             required formControlName="category"
+             [(ngModel)]="product.category" name="productprice">
+    </div>
+
+    <div class="btn-group">
+      <button type="submit" class="btn-success">Add</button>
+    </div>
+
+    <p [ngStyle]="{'color': messageColor}">{{message}}</p>
+  </form>
+
+</div>

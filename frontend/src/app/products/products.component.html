@@ -1,0 +1,26 @@
+<h2 style="text-align: center">Products List</h2>
+<ul class="products">
+  <div style="width: 95%">
+    <span class="barcode_label">Barcode</span>
+    <span class="p_name_label">Name</span>
+    <span class="p_price_label">Price</span>
+  </div>
+
+  <li *ngFor="let product of products">
+
+    <span class="barcode">{{product.idProduct}}</span>
+    <span class="p_name">{{product.name}}</span>
+    <span class="p_price">${{product.price}}</span>
+    <div style="display: inline-block; width: 30%;">
+      <button class="edit_button" (click)="edit(product)">
+        Edit
+      </button>
+      <button class="delete_button" (click)="delete(product)">
+        Delete
+      </button>
+    </div>
+
+
+  </li>
+</ul>
+

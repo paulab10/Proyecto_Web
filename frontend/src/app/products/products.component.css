@@ -1,0 +1,93 @@
+.products {
+  list-style: none;
+}
+
+.products li{
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 600;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+[class*='barcode'] {
+  height: 100%;
+  width: 11%;
+  padding: 15px 0;
+  display: inline-block;
+  border-radius: 2px;
+  text-align: center;
+}
+
+[class*='p_name'] {
+  display: inline-block;
+  width: 30%;
+  padding: 15px 10px;
+  font-weight: bold;
+}
+
+[class*='p_price'] {
+  width: 20%;
+  padding: 15px 10px 15px 0;
+}
+
+.barcode {
+  background-color: #155a70;
+}
+
+.barcode_label {
+  color: #2C9AB7;
+  font-weight: bold;
+}
+
+.p_name {
+  color: white;
+}
+
+.p_name_label {
+  text-align: center;
+  color: #2C9AB7;
+}
+
+.p_price {
+  color: darkcyan;
+  font-weight: 600;
+}
+
+.p_price_label {
+  color: #2C9AB7;
+  font-weight: bold;
+}
+
+button {
+  vertical-align: middle;
+}
+
+.delete_button {
+  background-color: crimson;
+  margin-right: 30px;
+}
+
+.delete_button:hover {
+  background-color: #dd6968;
+  color: #424546;
+  cursor: pointer;
+}
+
+.edit_button {
+  margin-left: 15%;
+  background-color: darkorange;
+  margin-right: 10px;
+}
+
+.edit_button:hover {
+  background-color: #e5c04c;
+  color: #424546;
+  cursor: pointer;
+}
+
+
