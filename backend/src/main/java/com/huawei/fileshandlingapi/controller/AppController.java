@@ -22,6 +22,7 @@ public class AppController {
 
     @PostMapping(value = "/upload-file")
     public ResponseEntity<String> handleFileUpload(@RequestParam("file") MultipartFile file) {
+        System.out.println("[INFO]: Uploading file");
         String message = "";
         try {
             handlingFilesService.storeFile(file);

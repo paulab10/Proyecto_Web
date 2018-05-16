@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+
 @Service
 public class HandlingFilesService implements IHandlingFilesService {
 
@@ -17,7 +18,9 @@ public class HandlingFilesService implements IHandlingFilesService {
     @Override
     public void initDirectory() {
         try {
-            Files.createDirectory(rootLocation);
+            if (!Files.isDirectory(rootLocation)) {
+                Files.createDirectory(rootLocation);
+            }
         } catch (IOException e) {
             throw new RuntimeException("Could not initialize storage!");
         }
