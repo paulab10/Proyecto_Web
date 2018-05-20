@@ -21,17 +21,18 @@ export class LoadFilesComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectFile(event) {
+  selectFile(event, fileName) {
     this.selectedFiles = event.target.files;
     this.excelImg = "../../assets/excel_color.png";
-    this.uploadFile();
+    this.uploadFile(fileName);
   }
 
-  uploadFile() {
+  uploadFile(fileName) {
     this.progress.percentage = 0;
 
     this.currentFileUpload = this.selectedFiles.item(0);
-    this.uploadService.pushFileToStorage(this.currentFileUpload).subscribe(event => {
+    //this.currentFileUpload.
+    this.uploadService.pushFileToStorage(this.currentFileUpload, fileName).subscribe(event => {
       if (event.type === HttpEventType.UploadProgress) {
         this.progress.percentage = Math.round(100 * event.loaded / event.total);
       } else if (event instanceof HttpResponse) {

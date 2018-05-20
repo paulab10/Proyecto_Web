@@ -26,4 +26,6 @@ public class CooperadoresConstants {
     public final static String CONECTAR_KEY = "Conectar";
 
     public final static String APPLUS_KEY = "Applus";
+
+    public final static String DETAIL_VIEW = "detailview";
 }
