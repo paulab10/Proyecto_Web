@@ -43,4 +43,13 @@ export class LoadFilesComponent implements OnInit {
     this.selectedFiles = undefined;
   }
 
+  updateDetailView() {
+    this.uploadService.updateDetailView().subscribe(event => {
+      if (event instanceof HttpResponse) {
+        console.log("DV Updated");
+      }
+    });
+  }
+
+
 }

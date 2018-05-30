@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ProductExcel} from "../productExcel";
+import {UploadFileService} from "../upload-file.service";
 
 @Component({
   selector: 'app-info-details',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private uploadService: UploadFileService) { }
+
+  products: ProductExcel[];
+
+  supplierName: string = "sicte";
 
   ngOnInit() {
+    //this.getAvailableList();
+  }
+
+  getAvailableList() {
+    this.uploadService.getAvailableList(this.supplierName).
+    subscribe( products => {
+        if (products != null) {
+          this.products = products;
+          console.log(products);
+        }
+    });
   }
 
 }

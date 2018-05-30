@@ -7,9 +7,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminComponent } from './admin/admin.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductsComponent } from './products/products.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { AddComponent } from './add/add.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { LoadFilesComponent } from './load-files/load-files.component';
 import { InfoDetailsComponent } from './info-details/info-details.component';
@@ -21,8 +19,6 @@ import {UploadFileService} from "./upload-file.service";
     DashboardComponent,
     AdminComponent,
     ProductDetailComponent,
-    ProductsComponent,
-    AddComponent,
     LoadFilesComponent,
     InfoDetailsComponent
   ],

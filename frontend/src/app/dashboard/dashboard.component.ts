@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Product} from '../product';
+import {ProductExcel} from '../productExcel';
 import {Router} from "@angular/router";
 
 @Component({
@@ -10,7 +10,7 @@ import {Router} from "@angular/router";
 })
 export class DashboardComponent {
 
-  products: Product[] = [];
+  products: ProductExcel[] = [];
 
   constructor(private router: Router) { }
 
