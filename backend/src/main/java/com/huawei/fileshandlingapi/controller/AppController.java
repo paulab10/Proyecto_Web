@@ -2,7 +2,6 @@ package com.huawei.fileshandlingapi.controller;
 
 import com.huawei.fileshandlingapi.model.ProductsExcel;
 import com.huawei.fileshandlingapi.service.IHandlingFilesService;
-import com.sun.media.jfxmedia.Media;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -10,17 +9,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 //import org.springframework.m
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import static com.huawei.fileshandlingapi.constants.CooperadoresConstants.AVAILABLE_KEY;
+import static com.huawei.fileshandlingapi.constants.CooperadoresConstants.TO_CREATE_KEY;
 
 @RestController
 public class AppController {
@@ -47,9 +42,9 @@ public class AppController {
         }
     }
 
-    @GetMapping(value = "/get/available/{supplier}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<ProductsExcel>> getAvailables(@PathVariable String supplier) {
-        List<ProductsExcel> resultsList = handlingFilesService.processSupplier(supplier).get(AVAILABLE_KEY);
+    @GetMapping(value = "/get/{action}/{supplier}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<ProductsExcel>> getModificationInfo(@PathVariable String supplier, @PathVariable String action) {
+        List<ProductsExcel> resultsList = handlingFilesService.processSupplier(supplier).get(action);
 
         if (resultsList != null) {
             System.out.println("Supplier processed correctly");
@@ -60,7 +55,6 @@ public class AppController {
 
             return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(null);
         }
-
     }
 
     @PutMapping(value = "/update-dv")

@@ -20,13 +20,43 @@ export class InfoDetailsComponent implements OnInit {
   }
 
   getAvailableList() {
-    this.uploadService.getAvailableList(this.supplierName).
-    subscribe( products => {
+    this.uploadService.getAvailableList(this.supplierName)
+      .subscribe( products => {
         if (products != null) {
           this.products = products;
           console.log(products);
         }
-    });
+      });
+  }
+
+  getPendingToCreateList() {
+    this.uploadService.getToCreateList(this.supplierName)
+      .subscribe( products => {
+        if (products != null) {
+          this.products = products;
+          console.log(products);
+        }
+      });
+  }
+
+  getPendingToAdjustList() {
+    this.uploadService.getToAdjustList(this.supplierName)
+      .subscribe( products => {
+        if (products != null) {
+          this.products = products;
+          console.log(products);
+        }
+      });
+  }
+
+  getPendingToCheckList() {
+    this.uploadService.getToCheckList(this.supplierName)
+      .subscribe( products => {
+        if (products != null) {
+          this.products = products;
+          console.log(products);
+        }
+      });
   }
 
 }

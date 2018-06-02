@@ -2,36 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7959f88-cbd4-45cd-a294-65c91c26bc53" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierDV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierMacro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/model/ProductsExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/alternative_background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ExcelParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ExcelParsing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/CooperadoresConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/CooperadoresConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/ExcelConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/ExcelConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/upload-dir/ISDP_template.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/add/add.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/add/add.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/add/add.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/add/add.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/productExcel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/products/products.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/products/products.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/products/products.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/products/products.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/store.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/store.service.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/upload-file.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/upload-file.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/backend/target/" />
@@ -44,23 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="load-files.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload-file.service.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upload-file.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/upload-file.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+            <state relative-caret-position="385">
+              <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -68,20 +37,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productExcel.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/productExcel.ts">
+      <file leaf-file-name="info-details.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="71">
+              <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+              <folding>
+                <element signature="n#ul#0;n#div#1;n#section#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="info-details.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html">
+      <file leaf-file-name="info-details.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+            <state relative-caret-position="421">
+              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +64,8 @@
       <file leaf-file-name="AppController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+            <state relative-caret-position="119">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,10 +73,49 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="HandlingFilesService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IHandlingFilesService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CooperadoresConstants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/CooperadoresConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ParseSupplierDV.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierDV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1255">
+            <state relative-caret-position="1242">
               <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,45 +127,11 @@
       <file leaf-file-name="ExcelParsing.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ExcelParsing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1217">
-              <caret line="125" selection-start-line="125" selection-end-line="125" />
+            <state relative-caret-position="-36">
+              <caret line="217" column="18" selection-start-line="217" selection-start-column="18" selection-end-line="217" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#determineValidRows#0;class#ExcelParsing#0" />
-                <element signature="e#8465#8480#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info-details.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,9 +159,6 @@
         <option value="$PROJECT_DIR$/backend/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/model/ProductsExcel.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierMacro.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/CooperadoresConstants.java" />
         <option value="$PROJECT_DIR$/frontend/src/app/product.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/productExcel.ts" />
@@ -190,12 +167,16 @@
         <option value="$PROJECT_DIR$/frontend/src/app/products/products.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierDV.java" />
-        <option value="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ExcelParsing.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/CooperadoresConstants.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java" />
         <option value="$PROJECT_DIR$/frontend/src/app/upload-file.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app.component.html" />
       </list>
     </option>
   </component>
@@ -235,8 +216,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,7 +258,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fileshandlingapi" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Proyecto_Web" type="b2602c69:ProjectViewProjectNode" />
@@ -315,6 +296,11 @@
             </path>
             <path>
               <item name="Proyecto_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="upload-dir" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto_Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -341,6 +327,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="load-files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -371,6 +363,7 @@
       <recent name="com.huawei.fileshandlingapi.business" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\p84090854\Proyecto_Web\frontend\src\assets" />
       <recent name="C:\Users\p84090854\Proyecto_Web\backend\src\main\java\com\huawei\fileshandlingapi\business" />
       <recent name="C:\Users\p84090854\Proyecto_Web\backend\src\main\java\com\huawei\fileshandlingapi\constants" />
       <recent name="C:\Users\l84090629\Documents\Projecto_Paula\backend\src\main\java\com\huawei\fileshandlingapi\constants" />
@@ -451,6 +444,8 @@
       <workItem from="1526518286712" duration="3114000" />
       <workItem from="1526526088246" duration="1105000" />
       <workItem from="1527643517097" duration="12877000" />
+      <workItem from="1527656472576" duration="146000" />
+      <workItem from="1527962861845" duration="4468000" />
     </task>
     <task id="LOCAL-00001" summary="Excel Parsing updated">
       <created>1526775455927</created>
@@ -459,15 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526775455927</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First Integration Front with Back">
+      <created>1527656564613</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527656564613</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37328000" />
+    <option name="totallyTimeSpent" value="41942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -477,12 +478,11 @@
       <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.50085765" side_tool="true" visible="true" weight="0.23298033" />
+      <window_info id="Structure" order="1" sideWeight="0.5046083" side_tool="true" visible="true" weight="0.23676248" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965695" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32933104" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
@@ -490,18 +490,19 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32933104" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5077187" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49914238" visible="true" weight="0.23298033" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2555746" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4953917" visible="true" weight="0.23676248" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32933104" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32933104" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32933104" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,14 +516,15 @@
       <path value="$PROJECT_DIR$/frontend" />
     </ignored-roots>
     <MESSAGE value="Excel Parsing updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Excel Parsing updated" />
+    <MESSAGE value="First Integration Front with Back" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Integration Front with Back" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java</url>
-          <line>34</line>
+          <line>29</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -530,6 +532,118 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/upload-file.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/productExcel.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierDV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ExcelParsing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#determineValidRows#0;class#ExcelParsing#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/upload-file.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -604,11 +718,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#determineValidRows#0;class#ExcelParsing#0" />
-            <element signature="e#5174#5193#0" expanded="true" />
-            <element signature="e#8247#8262#0" expanded="true" />
-            <element signature="e#8319#8334#0" expanded="true" />
-            <element signature="e#8388#8403#0" expanded="true" />
-            <element signature="e#8465#8480#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,13 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/ExcelConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -682,29 +784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/CooperadoresConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1633#1634#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,7 +814,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="900">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -739,49 +822,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/store.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/products/products.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/products/products.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/add/add.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/store.service.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/products/products.component.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/products/products.component.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/add/add.component.ts" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="126">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
@@ -796,26 +843,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierDV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1255">
+        <state relative-caret-position="1242">
           <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -823,35 +853,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/CooperadoresConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/upload-file.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+          <folding>
+            <element signature="n#ul#0;n#div#1;n#section#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ExcelParsing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1217">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        <state relative-caret-position="-36">
+          <caret line="217" column="18" selection-start-line="217" selection-start-column="18" selection-end-line="217" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#determineValidRows#0;class#ExcelParsing#0" />
-            <element signature="e#8465#8480#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+        <state relative-caret-position="119">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/upload-file.service.ts">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+        <state relative-caret-position="216">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
         </state>
       </provider>
     </entry>

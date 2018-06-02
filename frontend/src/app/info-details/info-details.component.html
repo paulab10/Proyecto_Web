@@ -52,7 +52,9 @@
     <div class="sub-container">
       <div class="select-btns flex-right">
         <a class="button" (click)="getAvailableList()">AVAILABLE</a>
-        <a class="button">CREATE</a>
+        <a class="button" (click)="getPendingToCreateList()">PENDING TO CREATE</a>
+        <a class="button" (click)="getPendingToAdjustList()">PENDING TO ADJUST</a>
+        <a class="button" (click)="getPendingToCheckList()">PENDING TO CHECK</a>
       </div>
 
       <div class="table-container">

@@ -23,11 +23,32 @@ export class UploadFileService {
     return this.http.request(req);
   }
 
-  /** Get product by Id */
+  /** Get List with info marked as available */
   getAvailableList(supplier: string): Observable<ProductExcel[]> {
     return this.http.get<ProductExcel[]>(`/get/available/${supplier}`)
       .pipe(
         catchError(this.handleError<ProductExcel[]>('getAvailableList'))
+      );
+  }
+
+  getToCreateList(supplier: string): Observable<ProductExcel[]> {
+    return this.http.get<ProductExcel[]>(`/get/to-create/${supplier}`)
+      .pipe(
+        catchError(this.handleError<ProductExcel[]>('getToCreateList'))
+      );
+  }
+
+  getToAdjustList(supplier: string): Observable<ProductExcel[]> {
+    return this.http.get<ProductExcel[]>(`/get/to-adjust/${supplier}`)
+      .pipe(
+        catchError(this.handleError<ProductExcel[]>('getToAdjustList'))
+      );
+  }
+
+  getToCheckList(supplier: string): Observable<ProductExcel[]> {
+    return this.http.get<ProductExcel[]>(`/get/to-check/${supplier}`)
+      .pipe(
+        catchError(this.handleError<ProductExcel[]>('getToCheckList'))
       );
   }
 

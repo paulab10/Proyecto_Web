@@ -29,11 +29,11 @@ public class CooperadoresConstants {
 
     public final static String DETAIL_VIEW = "detailview";
 
-    public final static int AVAILABLE_KEY = 0;
+    public final static String AVAILABLE_KEY = "available";
 
-    public final static int ADJUST_KEY = 1;
+    public final static String TO_ADJUST_KEY = "to-adjust";
 
-    public final static int CREATE_KEY = 2;
+    public final static String TO_CREATE_KEY = "to-create";
 
-    public final static int CHECK_KEY = 3;
+    public final static String TO_CHECK_KEY = "to-check";
 }

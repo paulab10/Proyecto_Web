@@ -55,7 +55,7 @@ public class HandlingFilesService implements IHandlingFilesService {
     }
 
     @Override
-    public Map<Integer, List<ProductsExcel>> processSupplier(String supplierDir) {
+    public Map<String, List<ProductsExcel>> processSupplier(String supplierDir) {
         try {
             return ExcelParsing.processSupplier(supplierMap.get(supplierDir), supplierDir);
         } catch (IOException e) {

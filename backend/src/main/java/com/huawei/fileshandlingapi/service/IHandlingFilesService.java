@@ -17,7 +17,7 @@ public interface IHandlingFilesService {
 
     void parseDetailView();
 
-    Map<Integer, List<ProductsExcel>> processSupplier(String supplierDir);
+    Map<String, List<ProductsExcel>> processSupplier(String supplierDir);
 
     Resource loadFiles(String filename);
 

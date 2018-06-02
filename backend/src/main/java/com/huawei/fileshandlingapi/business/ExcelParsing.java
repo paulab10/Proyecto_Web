@@ -213,9 +213,9 @@ public class ExcelParsing {
 
     //public
 
-    public static Map<Integer, List<ProductsExcel>> processSupplier(List<Row> supplier, String supplierDir) throws IOException, InvalidFormatException {
+    public static Map<String, List<ProductsExcel>> processSupplier(List<Row> supplier, String supplierDir) throws IOException, InvalidFormatException {
 
-        Map<Integer, List<ProductsExcel>> resultsMap = new HashMap<>();
+        Map<String, List<ProductsExcel>> resultsMap = new HashMap<>();
 
         ParseSupplierDV parseSupplierDV = new ParseSupplierDV(indexesMap, supplier);
         ParseSupplierMacro parseSupplierMacro = new ParseSupplierMacro(supplierDir);
@@ -267,9 +267,9 @@ public class ExcelParsing {
         }
 
         resultsMap.put(AVAILABLE_KEY, availableList);
-        resultsMap.put(ADJUST_KEY, adjustList);
-        resultsMap.put(CREATE_KEY, pendingToCreateList);
-        resultsMap.put(CHECK_KEY, pendingToCheckList);
+        resultsMap.put(TO_ADJUST_KEY, adjustList);
+        resultsMap.put(TO_CREATE_KEY, pendingToCreateList);
+        resultsMap.put(TO_CHECK_KEY, pendingToCheckList);
 
         return resultsMap;
     }
