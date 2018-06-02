@@ -44,11 +44,13 @@ export class LoadFilesComponent implements OnInit {
   }
 
   updateDetailView() {
+    /*
     this.uploadService.updateDetailView().subscribe(event => {
       if (event instanceof HttpResponse) {
         console.log("DV Updated");
       }
-    });
+    });*/
+    this.router.navigateByUrl(`/info-details`);
   }
 
 
