@@ -119,7 +119,7 @@ a.button {
   margin-bottom: 32px;
 
   a {
-    margin: 0 8px;
+    margin: 8px 8px;
     align-content: right;
     display: inline-block;
   }
@@ -135,18 +135,18 @@ a.button {
 
 /*//////////////////////////////////////////////////////////////////
 [ Table Scroll bar ]*/
-.table-container::-webkit-scrollbar
+.tables-container::-webkit-scrollbar
 {
   height:7px;
 
 }
-.table-container::-webkit-scrollbar-track
+.tables-container::-webkit-scrollbar-track
 {
   border-radius: 10px;
 
   webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
-.table-container::-webkit-scrollbar-thumb
+.tables-container::-webkit-scrollbar-thumb
 {
   background-color: #a6c53b;
 
@@ -157,8 +157,12 @@ a.button {
 
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
+.single-table-container {
+  max-height: 580px;
+  overflow: auto;
+}
 
-.table-container table {
+.tables-container table {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -175,7 +179,7 @@ a.button {
 
 /*==================================================================
 [ Header ]*/
-.table-container table {
+.tables-container table {
 
   thead {
     -webkit-box-sizing: border-box;
@@ -199,10 +203,9 @@ a.button {
 /*==================================================================
 [ Body ]*/
 
-.table-container table {
+.tables-container table {
 
   tbody {
-    max-height: 585px;
     overflow: auto;
     background: #222222;
 

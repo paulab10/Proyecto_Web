@@ -37,7 +37,7 @@ public class ParseSupplierMacro implements Runnable {
         Workbook workbook;
 
         try {
-            workbook = ExcelParsing.readExcel(dirName);
+            workbook = ExcelParsing.readExcel("suppliers/" + dirName);
         }catch (Exception e) {
             return;
         }
@@ -84,7 +84,7 @@ public class ParseSupplierMacro implements Runnable {
                 continue;
             }
 
-            if (cell.getStringCellValue().equalsIgnoreCase(PO_NUMERO)) {
+            if (cell.getStringCellValue().equalsIgnoreCase(PO_NUM_SHORT)) {
                 poNumberIndex = cell.getColumnIndex();
                 continue;
             }
@@ -109,7 +109,7 @@ public class ParseSupplierMacro implements Runnable {
             tmpProductsExcel.setPoNumber(row.getCell(poNumberIndex).getStringCellValue());
             tmpProductsExcel.setSprNumber((int)row.getCell(sprNumberIndex).getNumericCellValue());
             tmpProductsExcel.setItemCode((int)row.getCell(itemCodeIndex).getNumericCellValue());
-            tmpProductsExcel.setQuantitySupplier((int)row.getCell(poQtyIndex).getNumericCellValue());
+            tmpProductsExcel.setQuantitySupplier(row.getCell(poQtyIndex).getNumericCellValue());
 
             String key = tmpProductsExcel.getPoNumber() +
                     tmpProductsExcel.getSprNumber() +

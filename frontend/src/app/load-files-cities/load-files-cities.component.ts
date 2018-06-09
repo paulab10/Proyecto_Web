@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
 import {UploadFileService} from "../upload-file.service";
+import {Router} from "@angular/router";
 import {HttpEventType, HttpResponse} from "@angular/common/http";
-import {FilesStatus} from "../model/filesStatus";
-import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
-  selector: 'app-load-files',
-  templateUrl: './load-files.component.html',
-  styleUrls: ['./load-files.component.scss']
+  selector: 'app-load-files-cities',
+  templateUrl: './load-files-cities.component.html',
+  styleUrls: ['./load-files-cities.component.scss']
 })
-export class LoadFilesComponent implements OnInit {
+export class LoadFilesCitiesComponent implements OnInit {
 
   excelImg = {
     detailview: "../../assets/excel_gray.png",
@@ -22,21 +20,8 @@ export class LoadFilesComponent implements OnInit {
     dico: "../../assets/excel_gray.png",
   };
 
-  inputEnabled = {
-    detailview: true,
-    sicte: true,
-    fscr: true,
-    enecon: true,
-    applus: true,
-    conectar: true,
-    dico: true,
-  };
-
   selectedFiles: FileList;
   currentFileUpload: File;
-
-  filesStatus: FilesStatus;
-
   progress: { percentage: number } = { percentage: 0 };
   isProcessing = false;
 
@@ -44,18 +29,12 @@ export class LoadFilesComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
-    this.getFilesStatus();
   }
 
   selectFile(event, fileName) {
     this.selectedFiles = event.target.files;
     this.excelImg[fileName] = "../../assets/excel_color.png";
-    if (fileName === "detailview") {
-      this.uploadFile(fileName);
-    } else {
-      this.uploadFile("suppliers/" + fileName);
-    }
-
+    this.uploadFile(fileName);
   }
 
   uploadFile(fileName) {
@@ -76,8 +55,7 @@ export class LoadFilesComponent implements OnInit {
   }
 
   updateDetailView() {
-    this.openModal();
-
+    this.isProcessing = true;
     this.uploadService.updateDetailView().subscribe(event => {
       if (event.type === HttpEventType.UploadProgress) {
         console.log("Uploading..");
@@ -93,34 +71,6 @@ export class LoadFilesComponent implements OnInit {
 
   openModal() {
     this.isProcessing = true;
-  }
-
-  getFilesStatus() {
-    this.uploadService.getFilesStatus("suppliers")
-      .subscribe(status => {
-        if (status != null) {
-          this.filesStatus = status;
-          this.updateCards();
-          console.log(status);
-        }
-      });
-  }
-
-  updateCards() {
-    this.inputEnabled.sicte = this.filesStatus.sicte;
-    this.inputEnabled.enecon = this.filesStatus.enecon;
-    this.inputEnabled.conectar = this.filesStatus.conectar;
-    this.inputEnabled.fscr = this.filesStatus.fscr;
-    this.inputEnabled.dico = this.filesStatus.dico;
-    this.inputEnabled.applus = this.filesStatus.applus;
-
-    this.inputEnabled.detailview = this.filesStatus.detailview;
-
-    for(let key in this.inputEnabled) {
-      if (this.inputEnabled[key]) {
-        this.excelImg[key] = "../../assets/excel_color.png";
-      }
-    }
   }
 
 }

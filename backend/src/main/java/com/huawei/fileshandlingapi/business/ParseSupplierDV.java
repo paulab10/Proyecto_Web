@@ -33,14 +33,14 @@ public class ParseSupplierDV implements Runnable {
     }
 
     private void organizeSupplierDV() {
-        resultMap = new HashMap<String, ProductsExcel>();
+        resultMap = new HashMap<>();
 
         String keyValue = "";
         String poNumber = "";
         int itemCode = 0;
         int sprNumber = 0;
-        int quantity = 0;
-        int billedQty = 0;
+        double quantity = 0;
+        double billedQty = 0;
 
         int ex = 0;
 
@@ -55,11 +55,11 @@ public class ParseSupplierDV implements Runnable {
                 if (row.getCell(indexesMap.get(SPR_INDEX)).getCellTypeEnum().equals(CellType.STRING)) {
                     sprNumber = Integer.parseInt(row.getCell(indexesMap.get(SPR_INDEX)).getStringCellValue());
                 } else {
-                    sprNumber = (int) row.getCell(indexesMap.get(SPR_INDEX)).getNumericCellValue();
+                    sprNumber = (int)row.getCell(indexesMap.get(SPR_INDEX)).getNumericCellValue();
                 }
 
-                quantity = (int) row.getCell(indexesMap.get(QUANTITY_INDEX)).getNumericCellValue();
-                billedQty = (int) row.getCell(indexesMap.get(PO_BILLED_INDEX)).getNumericCellValue();
+                quantity = row.getCell(indexesMap.get(QUANTITY_INDEX)).getNumericCellValue();
+                billedQty = row.getCell(indexesMap.get(PO_BILLED_INDEX)).getNumericCellValue();
 
                 tmpProductsExcel.setItemCode(itemCode);
                 tmpProductsExcel.setPoNumber(poNumber);

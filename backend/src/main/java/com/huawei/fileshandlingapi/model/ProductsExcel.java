@@ -7,29 +7,29 @@ public class ProductsExcel {
 
     private int itemCode;
 
-    private int quantityDV;
+    private double quantityDV;
 
-    private int quantitySupplier;
+    private double quantitySupplier;
 
     private String description;
 
-    private int qtyAccepted;
+    private double qtyAccepted;
 
-    private int billedQty;
+    private double billedQty;
 
-    public int getBilledQty() {
+    public double getBilledQty() {
         return billedQty;
     }
 
-    public void setBilledQty(int billedQty) {
+    public void setBilledQty(double billedQty) {
         this.billedQty = billedQty;
     }
 
-    public int getQuantitySupplier() {
+    public double getQuantitySupplier() {
         return quantitySupplier;
     }
 
-    public void setQuantitySupplier(int quantitySupplier) {
+    public void setQuantitySupplier(double quantitySupplier) {
         this.quantitySupplier = quantitySupplier;
     }
 
@@ -41,23 +41,23 @@ public class ProductsExcel {
         this.description = description;
     }
 
-    public int getQtyAccepted() {
+    public double getQtyAccepted() {
         return qtyAccepted;
     }
 
-    public void setQtyAccepted(int qtyAccepted) {
+    public void setQtyAccepted(double qtyAccepted) {
         this.qtyAccepted = qtyAccepted;
     }
 
-    public void addQuantity(int quantity) {
+    public void addQuantity(double quantity) {
         this.quantityDV += quantity;
     }
 
-    public int getQuantityDV() {
+    public double getQuantityDV() {
         return quantityDV;
     }
 
-    public void setQuantityDV(int quantityDV) {
+    public void setQuantityDV(double quantityDV) {
         this.quantityDV = quantityDV;
     }
 

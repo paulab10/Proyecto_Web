@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpEvent, HttpRequest} from "@angular/common/http";
 import {Observable} from "rxjs/Observable";
 import {catchError} from "rxjs/operators";
-import {ProductExcel} from "./productExcel";
+import {ProductExcel} from "./model/productExcel";
 import {of} from "rxjs/observable/of";
+import {FilesStatus} from "./model/filesStatus";
 
 @Injectable()
 export class UploadFileService {
@@ -21,6 +22,13 @@ export class UploadFileService {
     });
 
     return this.http.request(req);
+  }
+
+  getFilesStatus(type: string): Observable<FilesStatus> {
+    return this.http.get<FilesStatus>(`/get/status/${type}`)
+      .pipe(
+        catchError(this.handleError<FilesStatus>('getFilesStatus'))
+      );
   }
 
   /** Get List with info marked as available */
@@ -55,6 +63,7 @@ export class UploadFileService {
   /** Update Detail View **/
   updateDetailView(): Observable<HttpEvent<{}>> {
     const req = new HttpRequest('PUT', '/update-dv/',"", {
+      reportProgress: true,
       responseType: 'text'
     });
 

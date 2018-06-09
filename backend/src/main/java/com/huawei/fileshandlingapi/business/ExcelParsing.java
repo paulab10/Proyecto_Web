@@ -69,7 +69,7 @@ public class ExcelParsing {
                 continue;
             }
 
-            if (cell.getStringCellValue().equalsIgnoreCase(PO_NUMERO)) {
+            if (cell.getStringCellValue().equalsIgnoreCase(PO_NUM_SHORT)) {
                 indexesMap.put(PO_NUMBER_INDEX, cell.getColumnIndex());
                 continue;
             }

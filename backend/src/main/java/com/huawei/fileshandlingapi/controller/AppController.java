@@ -1,6 +1,7 @@
 package com.huawei.fileshandlingapi.controller;
 
 import com.huawei.fileshandlingapi.model.ProductsExcel;
+import com.huawei.fileshandlingapi.model.FilesStatus;
 import com.huawei.fileshandlingapi.service.IHandlingFilesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,9 +14,6 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static com.huawei.fileshandlingapi.constants.CooperadoresConstants.AVAILABLE_KEY;
-import static com.huawei.fileshandlingapi.constants.CooperadoresConstants.TO_CREATE_KEY;
 
 @RestController
 public class AppController {
@@ -57,10 +55,16 @@ public class AppController {
         }
     }
 
+    @GetMapping(value = "/get/status/{type}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<FilesStatus> getFilesStatus(@PathVariable String type) {
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(handlingFilesService.getFilesStatus(type));
+    }
+
     @PutMapping(value = "/update-dv")
     public ResponseEntity<String> updateDetailView() {
         handlingFilesService.parseDetailView();
 
-        return  ResponseEntity.status(HttpStatus.OK).body((String)"Detail View Processed");
+        return  ResponseEntity.status(HttpStatus.OK).body("Detail View Processed");
     }
 }

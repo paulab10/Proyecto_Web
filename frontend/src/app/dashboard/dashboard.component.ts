@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ProductExcel} from '../productExcel';
+import {ProductExcel} from '../model/productExcel';
 import {Router} from "@angular/router";
 
 @Component({
@@ -16,5 +16,9 @@ export class DashboardComponent {
 
   goToLoadFiles() {
     this.router.navigate(['load-files']);
+  }
+
+  goToLoadFilesCities() {
+    this.router.navigate(['load-files-cities']);
   }
 }

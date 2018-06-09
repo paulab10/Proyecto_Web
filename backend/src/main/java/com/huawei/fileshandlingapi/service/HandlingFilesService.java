@@ -1,23 +1,26 @@
 package com.huawei.fileshandlingapi.service;
 
-import ch.qos.logback.core.rolling.helper.FileStoreUtil;
 import com.huawei.fileshandlingapi.business.ExcelParsing;
 import com.huawei.fileshandlingapi.model.ProductsExcel;
+import com.huawei.fileshandlingapi.model.FilesStatus;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.tomcat.util.http.fileupload.FileUtils;
-import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
-import org.springframework.util.FileSystemUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.swing.text.StyledEditorKit;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import static com.huawei.fileshandlingapi.constants.CooperadoresConstants.DETAIL_VIEW;
 
 
 @Service
@@ -67,14 +70,31 @@ public class HandlingFilesService implements IHandlingFilesService {
     }
 
     @Override
-    public Resource loadFiles(String filename) {
-        try {
-            Path filePath = rootLocation.resolve(filename);
-            File file = filePath.toFile();
-        } catch (Exception e) {
-            e.printStackTrace();
+    public FilesStatus getFilesStatus(String dirName) {
+        FilesStatus status;
+
+        Map<String, Boolean> filesStatusMap = new HashMap<>();
+
+        File folder = new File(BASE_PATH + dirName + "/");
+        String path = folder.getPath();
+        String[] subDirectories = folder.list((dir, name) -> new File(dir, name).isDirectory());
+
+        for(String name: subDirectories) {
+            File file = new File(BASE_PATH + "/suppliers/" + name);
+
+            filesStatusMap.put(name, file.listFiles().length > 0);
         }
-        return null;
+
+        if (dirName.equalsIgnoreCase("suppliers")) {
+            Boolean hasDV = ((new File(BASE_PATH + "/detailview")).listFiles().length) > 0;
+
+            filesStatusMap.put(DETAIL_VIEW, hasDV);
+            status = new FilesStatus(filesStatusMap, hasDV);
+        } else {
+            status = new FilesStatus(filesStatusMap, false);
+        }
+
+        return status;
     }
 
     @Override

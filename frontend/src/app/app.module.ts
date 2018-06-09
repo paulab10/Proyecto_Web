@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { LoadFilesComponent } from './load-files/load-files.component';
 import { InfoDetailsComponent } from './info-details/info-details.component';
 import {UploadFileService} from "./upload-file.service";
+import { LoadFilesCitiesComponent } from './load-files-cities/load-files-cities.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {UploadFileService} from "./upload-file.service";
     AdminComponent,
     ProductDetailComponent,
     LoadFilesComponent,
-    InfoDetailsComponent
+    InfoDetailsComponent,
+    LoadFilesCitiesComponent
   ],
   imports: [
     BrowserModule,

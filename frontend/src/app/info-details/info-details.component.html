@@ -60,9 +60,9 @@
         <a class="button" [class.btn-active]="tableActive.check" (click)="getPendingToCheckList()">PENDING TO CHECK</a>
       </div>
 
-      <div class="table-container">
+      <div class="tables-container">
         <!-- Available Table -->
-        <div id="table_available" *ngIf="tableActive.available">
+        <div class="single-table-container" id="table_available" *ngIf="tableActive.available">
           <table cellspacing="0">
             <thead>
               <tr class="row100 head">
@@ -77,7 +77,7 @@
             </thead>
 
             <tbody>
-            <!--
+
             <tr *ngFor="let product of products">
               <td colspan="2">{{product.poNumber}}</td>
               <td>{{product.sprNumber}}</td>
@@ -85,8 +85,8 @@
               <td colspan="2" class="cell-center">{{product.description}}</td>
               <td class="cell-center">{{product.quantityDV}}</td>
               <td class="cell-center">{{product.quantitySupplier}}</td>
-            </tr>-->
-
+            </tr>
+            <!--
             <tr>
               <td colspan="2">197978978-19</td>
               <td>366987</td>
@@ -94,13 +94,13 @@
               <td colspan="2" class="cell-center">This is a long description to test this column width</td>
               <td class="cell-center">10</td>
               <td class="cell-center">12</td>
-            </tr>
+            </tr>-->
             </tbody>
           </table>
         </div>
 
         <!-- Pending to Create Table -->
-        <div id="table_create" *ngIf="tableActive.create">
+        <div class="single-table-container" id="table_create" *ngIf="tableActive.create">
           <table cellspacing="0">
             <thead>
             <tr class="row100 head">
@@ -115,28 +115,29 @@
 
             <tbody>
 
-            <!--
+
             <tr *ngFor="let product of products">
               <td colspan="2">{{product.poNumber}}</td>
               <td>{{product.sprNumber}}</td>
               <td class="cell-center">{{product.itemCode}}</td>
               <td colspan="2" class="cell-center">{{product.description}}</td>
               <td class="cell-center">{{product.quantitySupplier}}</td>
-            </tr>-->
+            </tr>
 
+            <!--
             <tr>
               <td colspan="2">197978978-19</td>
               <td>366987</td>
               <td class="cell-center">407</td>
               <td colspan="2" class="cell-center">This is a long description to test this column width</td>
               <td class="cell-center">12</td>
-            </tr>
+            </tr>-->
             </tbody>
           </table>
         </div>
 
         <!-- Pending to Adjust Table -->
-        <div id="table_adjust" *ngIf="tableActive.adjust">
+        <div class="single-table-container" id="table_adjust" *ngIf="tableActive.adjust">
           <table cellspacing="0">
             <thead>
             <tr class="row100 head">
@@ -151,7 +152,6 @@
 
             <tbody>
 
-            <!--
             <tr *ngFor="let product of products">
               <td colspan="2">{{product.poNumber}}</td>
               <td>{{product.sprNumber}}</td>
@@ -159,8 +159,9 @@
               <td colspan="2" class="cell-center">{{product.description}}</td>
               <td class="cell-center">{{product.quantityDV}}</td>
               <td class="cell-center">{{product.quantitySupplier - product.quantityDV}}</td>
-            </tr>-->
+            </tr>
 
+            <!--
             <tr>
               <td colspan="2">197978978-19</td>
               <td>366987</td>
@@ -169,6 +170,7 @@
               <td class="cell-center">12</td>
               <td class="cell-center">8</td>
             </tr>
+            -->
             </tbody>
           </table>
         </div>
@@ -189,7 +191,7 @@
 
             <tbody>
 
-            <!--
+
             <tr *ngFor="let product of products">
               <td colspan="2">{{product.poNumber}}</td>
               <td>{{product.sprNumber}}</td>
@@ -197,8 +199,9 @@
               <td colspan="2" class="cell-center">{{product.description}}</td>
               <td class="cell-center">{{product.quantitySupplier}}</td>
               <td class="cell-center">{{product.billedQty}}</td>
-            </tr>-->
+            </tr>
 
+            <!--
             <tr>
               <td colspan="2">197978978-19</td>
               <td>366987</td>
@@ -207,6 +210,8 @@
               <td class="cell-center">12</td>
               <td class="cell-center">8</td>
             </tr>
+            -->
+
             </tbody>
           </table>
         </div>

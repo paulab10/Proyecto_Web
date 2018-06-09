@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ProductExcel} from "../productExcel";
+import {ProductExcel} from "../model/productExcel";
 import {UploadFileService} from "../upload-file.service";
 
 @Component({
@@ -39,7 +39,7 @@ export class InfoDetailsComponent implements OnInit {
     this.tableActive.available = true;
     this.supplierName = 'sicte';
 
-    //this.getAvailableList();
+    this.getAvailableList();
   }
 
   getAvailableList() {
@@ -119,6 +119,8 @@ export class InfoDetailsComponent implements OnInit {
 
     this.tabActive[tabName] = true;
     this.supplierName = tabName;
+
+    this.getAvailableList();
   }
 
 }
