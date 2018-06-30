@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7959f88-cbd4-45cd-a294-65c91c26bc53" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/upload-dir/detailview/DetailView.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/upload-dir/suppliers/conectar/MACRO CONECTAR APRIL.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/upload-dir/suppliers/dico/Macro DICO south May.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/upload-dir/suppliers/enecon/MACRO TOTAL ENECON SOUTH MARCH.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/upload-dir/suppliers/fscr/Macro FSCR may.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/upload-dir/suppliers/sicte/ACTA LIQUIDACION SEMANAL 20 SICTE.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/data.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/data.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/view-details/view-details.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/view-details/view-details.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/view-details/view-details.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/view-details/view-details.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo_huawei.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ExcelParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ExcelParsing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierDV.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierDV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierMacro.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/business/ParseSupplierMacro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/ExcelConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/constants/ExcelConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/model/ProductsExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/model/ProductsExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/HandlingFilesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/huawei/fileshandlingapi/service/IHandlingFilesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/info-details/info-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/load-files-cities/load-files-cities.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/load-files-cities/load-files-cities.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/load-files-cities/load-files-cities.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/load-files-cities/load-files-cities.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/load-files/load-files.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/upload-file.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/upload-file.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/backend/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,7 +74,7 @@
       <file leaf-file-name="app.component.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="287">
               <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
             </state>
           </provider>
@@ -276,7 +238,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -432,6 +393,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,6 +532,7 @@
       <workItem from="1529943146654" duration="640000" />
       <workItem from="1529970777513" duration="7454000" />
       <workItem from="1530202555883" duration="618000" />
+      <workItem from="1530379581688" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="Excel Parsing updated">
       <created>1526775455927</created>
@@ -592,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528524959071</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update 30/06/2018">
+      <created>1530379727830</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1530379727830</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158374000" />
+    <option name="totallyTimeSpent" value="158637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -606,9 +576,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.45822784" side_tool="true" visible="true" weight="0.21633889" />
+      <window_info id="Structure" order="1" sideWeight="0.4607595" side_tool="true" visible="true" weight="0.2193646" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39794168" />
@@ -621,14 +592,13 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32933104" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32933104" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32246998" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5417721" visible="true" weight="0.21633889" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5392405" visible="true" weight="0.2193646" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32933104" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -654,7 +624,8 @@
     <MESSAGE value="Excel Parsing updated" />
     <MESSAGE value="First Integration Front with Back" />
     <MESSAGE value="Implemented File Status" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented File Status" />
+    <MESSAGE value="update 30/06/2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 30/06/2018" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1006,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="287">
           <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
         </state>
       </provider>
