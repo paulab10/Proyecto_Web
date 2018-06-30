@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {UploadFileService} from "../upload-file.service";
 import {HttpEventType, HttpResponse} from "@angular/common/http";
 import {FilesStatus} from "../model/filesStatus";
 import {forEach} from "@angular/router/src/utils/collection";
+import {DataService} from "../data.service";
 
 @Component({
   selector: 'app-load-files',
   templateUrl: './load-files.component.html',
   styleUrls: ['./load-files.component.scss']
 })
+
 export class LoadFilesComponent implements OnInit {
 
   excelImg = {
@@ -39,11 +41,14 @@ export class LoadFilesComponent implements OnInit {
 
   progress: { percentage: number } = { percentage: 0 };
   isProcessing = false;
+  modalText: string;
 
   constructor(private uploadService: UploadFileService,
-              private router: Router) { }
+              private router: Router,
+              private data: DataService) { }
 
   ngOnInit() {
+    this.data.changeMessage("suppliers");
     this.getFilesStatus();
   }
 
@@ -59,6 +64,7 @@ export class LoadFilesComponent implements OnInit {
   }
 
   uploadFile(fileName) {
+    this.openModal("Uploading file...");
     this.progress.percentage = 0;
 
     this.currentFileUpload = this.selectedFiles.item(0);
@@ -68,6 +74,7 @@ export class LoadFilesComponent implements OnInit {
         this.progress.percentage = Math.round(100 * event.loaded / event.total);
         console.log(this.progress.percentage);
       } else if (event instanceof HttpResponse) {
+        this.closeModal();
         console.log('File is completely uploaded!');
       }
     });
@@ -76,7 +83,7 @@ export class LoadFilesComponent implements OnInit {
   }
 
   updateDetailView() {
-    this.openModal();
+    this.openModal("Detail View is being processed");
 
     this.uploadService.updateDetailView().subscribe(event => {
       if (event.type === HttpEventType.UploadProgress) {
@@ -85,14 +92,19 @@ export class LoadFilesComponent implements OnInit {
       else if (event instanceof HttpResponse) {
         console.log("DV Updated");
         this.isProcessing = false;
-        this.router.navigateByUrl(`/info-details`);
+        this.router.navigateByUrl(`/view-details`);
       }
     });
 
   }
 
-  openModal() {
+  openModal(modalText: string) {
     this.isProcessing = true;
+    this.modalText = modalText;
+  }
+
+  closeModal() {
+    this.isProcessing = false;
   }
 
   getFilesStatus() {

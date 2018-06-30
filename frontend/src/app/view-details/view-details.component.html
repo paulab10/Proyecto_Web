@@ -5,11 +5,18 @@
   </div>
 </div>
 
-<section class="container">
+<div class="title">
+  <h2>Details information</h2>
+</div>
 
-  <div class="title">
-    <h2>Details information</h2>
-  </div>
+<!-- Selector buttons -->
+<div class="select-btns-container align-center">
+  <a class="button" [class.btn-active]="supplierActive" (click)="onSuppliersClicked()">SUPPLIERS DETAILS</a>
+  <a class="button" [class.btn-active]="citiesActive" >CITIES DETAILS</a>
+</div>
+
+<!-- Suppliers Section -->
+<section class="container" *ngIf="supplierActive">
 
   <div class="info-container">
 
@@ -59,15 +66,15 @@
         <div class="single-table-container" id="table_available" *ngIf="tableActive.available">
           <table cellspacing="0">
             <thead>
-              <tr class="row100 head">
-                <th colspan="2">PO Number</th>
-                <th>No. SPR</th>
-                <th class="cell-center">Code Item</th>
-                <th colspan="2" class="cell-center">Description</th>
-                <th class="cell-center">PR Line Quantity</th>
-                <th class="cell-center">Supplier Quantity</th>
+            <tr class="row100 head">
+              <th colspan="2">PO Number</th>
+              <th>No. SPR</th>
+              <th class="cell-center">Code Item</th>
+              <th colspan="2" class="cell-center">Description</th>
+              <th class="cell-center">Supplier Quantity</th>
+              <th class="cell-center">PR Line Quantity</th>
 
-              </tr>
+            </tr>
             </thead>
 
             <tbody>
@@ -77,8 +84,8 @@
               <td>{{product.sprNumber}}</td>
               <td class="cell-center">{{product.itemCode}}</td>
               <td colspan="2" class="cell-center">{{product.description}}</td>
-              <td class="cell-center">{{product.quantityDV}}</td>
               <td class="cell-center">{{product.quantitySupplier}}</td>
+              <td class="cell-center">{{product.quantityDV}}</td>
             </tr>
             <!--
             <tr>
@@ -213,3 +220,6 @@
     </div>
   </div>
 </section>
+
+<!-- Cities Section -->
+<section class="container" *ngIf="citiesActive"></section>

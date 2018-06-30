@@ -16,6 +16,10 @@ export class UploadFileService {
 
     formdata.append('file', file);
 
+    if (name === "detailview") {
+      name = "detailview/detailview";
+    }
+
     const req = new HttpRequest('POST', '/upload-file/'+ name, formdata, {
       reportProgress: true,
       responseType: 'text'

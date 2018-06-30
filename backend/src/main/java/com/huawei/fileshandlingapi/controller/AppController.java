@@ -23,12 +23,17 @@ public class AppController {
 
     private Map<String, String> files = new HashMap<>();
 
-    @PostMapping(value = "/upload-file/{name}")
-    public ResponseEntity<String> handleFileUpload(@RequestParam("file") MultipartFile multipartFile, @PathVariable String name) {
+    @PostMapping(value = "/upload-file/{category}/{name}")
+    public ResponseEntity<String> handleFileUpload(@RequestParam("file") MultipartFile multipartFile, @PathVariable String name, @PathVariable String category) {
         System.out.println("[INFO]: Uploading file");
         String message = "";
         try {
-            handlingFilesService.storeFile(multipartFile, name);
+            if (category.equalsIgnoreCase("detailview")) {
+                handlingFilesService.storeFile(multipartFile, name, "");
+            } else {
+                handlingFilesService.storeFile(multipartFile, category, name);
+            }
+
             files.put(name, multipartFile.getOriginalFilename());
 
             message = "You successfully uploaded " + multipartFile.getOriginalFilename() + "!";

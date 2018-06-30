@@ -9,6 +9,29 @@ header {
 .header_img {
   width: 100%;
   max-height: 400px;
+  height: 250px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 16px;
+  left: 5%;
+}
+
+.logo-img {
+  height: 80px;
+  width: 80px;
+}
+
+.slogan-container {
+  position: absolute;
+  top: 110px;
+  left: 5%;
+  color: white;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .logo_header {
@@ -66,17 +89,27 @@ header {
   cursor: pointer;
 }
 
+// ----------------------------------------------
+//  FOOTER
+// ----------------------------------------------
+/* Huawei related */
+.footer-big {
+  height: 240px;
+  background: black;
+}
+
 /* Copyrights */
-.footer {
-  height: 50px;
+.footer-little {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #717070;
+  padding: 1em 0;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #FFFFFF;
-  text-transform: uppercase;
-  font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+  //font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
   font-weight: lighter;
+  font-size: 13px;
   letter-spacing: 2px;
   border-top-width: 2px;
 }
+
+
+

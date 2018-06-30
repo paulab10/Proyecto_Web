@@ -43,10 +43,10 @@ public class HandlingFilesService implements IHandlingFilesService {
     }
 
     @Override
-    public void storeFile(MultipartFile file, String dirName) {
+    public void storeFile(MultipartFile file, String category, String supplier) {
         try {
-            deleteFile(dirName);
-            Files.copy(file.getInputStream(), Paths.get(BASE_PATH + dirName).resolve(file.getOriginalFilename()));
+            deleteFile(category + "/" + supplier);
+            Files.copy(file.getInputStream(), Paths.get(BASE_PATH + category + "/" + supplier).resolve(file.getOriginalFilename()));
         } catch (Exception e) {
             throw new RuntimeException("FAIL!");
         }

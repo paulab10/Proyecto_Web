@@ -72,6 +72,17 @@ button {
 }
 
 .title {
+  width: 50%;
+  margin: 2em auto;
+  text-align: center;
+  font-size: 1.5em;
+  color: #ee1b24;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.title-card {
   text-align: center;
   width: 100%;
 }
@@ -80,4 +91,62 @@ button {
   width: 80px;
   height: 80px;
   margin: 0 auto;
+}
+
+//============== Modal Box ===================
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #ee1b24;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  span {
+    margin-top: 16px;
+  }
+}
+
+/* Animation Loader */
+.loader {
+  margin: 0 auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #ee1b24;
+  border-bottom: 16px solid #ee1b24;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

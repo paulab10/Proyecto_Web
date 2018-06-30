@@ -49,13 +49,18 @@ public class ExcelParsing {
         Iterator<Cell> cellIterator = headerRow.cellIterator();
 
         /* Index of columns */
-        indexesMap = new HashMap<Integer, Integer>();
+        indexesMap = new HashMap<>();
 
         while (cellIterator.hasNext()) {
             Cell cell = cellIterator.next();
 
             if (dataFormatter.formatCellValue(cell).equalsIgnoreCase(IBUY_STATUS)) {
                 indexesMap.put(STATUS_INDEX, cell.getColumnIndex());
+                continue;
+            }
+
+            if (cell.getStringCellValue().equalsIgnoreCase(DESCRIPTION)) {
+                indexesMap.put(DESCRIPTION_INDEX, cell.getColumnIndex());
                 continue;
             }
 
@@ -102,6 +107,7 @@ public class ExcelParsing {
     public static Workbook readExcel(String dirName) throws IOException, InvalidFormatException {
         // Creating a Workbook from an Excel file (.xls or .xlsx)
         File folder = new File(BASE_PATH + dirName + "/");
+        //File folder = new File(ExcelParsing.class.getClassLoader().getResource(BASE_PATH + dirName).getFile());
         File[] files = folder.listFiles();
         FileInputStream fileInputStream = null;
         Workbook workbook = null;
@@ -236,10 +242,10 @@ public class ExcelParsing {
         Map<String, ProductsExcel> supplierDV = parseSupplierDV.getResultMap();
         Map<String, ProductsExcel> supplierMacro = parseSupplierMacro.getResultsMap();
 
-        List<ProductsExcel> pendingToCreateList = new ArrayList<ProductsExcel>();
-        List<ProductsExcel> availableList = new ArrayList<ProductsExcel>();
-        List<ProductsExcel> adjustList = new ArrayList<ProductsExcel>();
-        List<ProductsExcel> pendingToCheckList = new ArrayList<ProductsExcel>();
+        List<ProductsExcel> pendingToCreateList = new ArrayList<>();
+        List<ProductsExcel> availableList = new ArrayList<>();
+        List<ProductsExcel> adjustList = new ArrayList<>();
+        List<ProductsExcel> pendingToCheckList = new ArrayList<>();
 
         for (ProductsExcel rowSupplier: supplierMacro.values()) {
             String keyValue = rowSupplier.getPoNumber() +
@@ -248,16 +254,69 @@ public class ExcelParsing {
             try {
                 ProductsExcel tmp = supplierDV.get(keyValue);
                 if (tmp != null) {
-                    tmp.setQuantitySupplier(rowSupplier.getQuantitySupplier());
-                    if (tmp.getQuantityDV() == rowSupplier.getQuantitySupplier() && tmp.getBilledQty() == rowSupplier.getQuantitySupplier()) {
+
+                    double availableQuantitiy = tmp.getAllQuantityDV() - tmp.getAllBilledQty();
+                    double billedQuantity = tmp.getAllBilledQty();
+                    double supplierQuantity = rowSupplier.getQuantitySupplier();
+
+                    /* Discard elements that are already billed */
+                    if (billedQuantity < supplierQuantity ) {
+                        /* Only IN PROCESS can be part of available and adjust */
+                        if (tmp.isInProcess()) {
+                            /* If enough quantity, determine available */
+                            if (supplierQuantity <= availableQuantitiy) {
+                                /* Loop to determine available */
+                                double tmpSupplierQty = supplierQuantity;
+                                List<Double> allQuantities = tmp.getQuantityDVList();
+                                List<Double> allBilledQty = tmp.getBilledQtyList();
+
+                                List<Double> currentQuantities = new ArrayList<>();
+                                for (int i = 0; i < allQuantities.size(); i++) {
+                                    currentQuantities.add(allQuantities.get(i) - allBilledQty.get(i));
+                                }
+
+                                currentQuantities.sort(null);
+
+                                for(Double currentQty: currentQuantities) {
+                                    ProductsExcel loopProduct = getNewProduct(tmp);
+                                    loopProduct.setQuantityDV(currentQty);
+
+                                    if (tmpSupplierQty >= currentQty) {
+                                        loopProduct.setQuantitySupplier(currentQty);
+                                    } else {
+                                        loopProduct.setQuantitySupplier(tmpSupplierQty);
+                                    }
+
+                                    tmpSupplierQty -= currentQty;
+                                    if (tmpSupplierQty < 0) {
+                                        tmpSupplierQty = 0;
+                                    }
+                                    availableList.add(loopProduct);
+                                }
+                            }
+                            /* Not enough quantity, set to adjust */
+                            else {
+                                tmp.setQuantityDV(availableQuantitiy);
+                                tmp.setQuantitySupplier(supplierQuantity);
+                                adjustList.add(tmp);
+                            }
+                            /* Not in process, could be part of create list */
+                        } else {
+                            pendingToCreateList.add(rowSupplier);
+                        }
+                    }
+
+                    /* Determine products to check */
+                    if (tmp.getAllBilledQty() != 0) { // Only add to list if no zero in Billed cell
+                        List<Double> allBilledQty = tmp.getBilledQtyList();
+
+                        tmp.setQuantitySupplier(rowSupplier.getQuantitySupplier());
+                        tmp.setBilledQty(tmp.getAllBilledQty());
                         pendingToCheckList.add(tmp);
                     }
-                    else if (tmp.getQuantityDV() >= rowSupplier.getQuantitySupplier()) {
-                        availableList.add(tmp);
-                    } else {
-                        adjustList.add(tmp);
-                    }
+
                 } else {
+
                     pendingToCreateList.add(rowSupplier);
                 }
             } catch (Exception e) {
@@ -273,4 +332,16 @@ public class ExcelParsing {
 
         return resultsMap;
     }
+
+    private static ProductsExcel getNewProduct(ProductsExcel tmp) {
+        ProductsExcel result = new ProductsExcel();
+
+        result.setItemCode(tmp.getItemCode());
+        result.setPoNumber(tmp.getPoNumber());
+        result.setSprNumber(tmp.getSprNumber());
+        result.setDescription(tmp.getDescription());
+        return result;
+    }
+
+
 }

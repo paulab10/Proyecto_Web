@@ -11,7 +11,7 @@ public interface IHandlingFilesService {
 
     void initDirectory();
 
-    void storeFile(MultipartFile file, String dirName);
+    void storeFile(MultipartFile file, String category, String supplier);
 
     void parseDetailView();
 

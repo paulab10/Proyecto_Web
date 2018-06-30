@@ -13,6 +13,8 @@ import { LoadFilesComponent } from './load-files/load-files.component';
 import { InfoDetailsComponent } from './info-details/info-details.component';
 import {UploadFileService} from "./upload-file.service";
 import { LoadFilesCitiesComponent } from './load-files-cities/load-files-cities.component';
+import { ViewDetailsComponent } from './view-details/view-details.component';
+import {DataService} from "./data.service";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { LoadFilesCitiesComponent } from './load-files-cities/load-files-cities.
     ProductDetailComponent,
     LoadFilesComponent,
     InfoDetailsComponent,
-    LoadFilesCitiesComponent
+    LoadFilesCitiesComponent,
+    ViewDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { LoadFilesCitiesComponent } from './load-files-cities/load-files-cities.
     ReactiveFormsModule
   ],
   providers: [
-    UploadFileService
+    UploadFileService,
+    DataService
   ],
   bootstrap: [AppComponent,
   ]

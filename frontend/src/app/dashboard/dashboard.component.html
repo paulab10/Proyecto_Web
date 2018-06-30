@@ -1,3 +1,10 @@
+<div class="modal" *ngIf="isProcessing">
+  <div class="modal-content">
+    <div class="loader"></div>
+    <span>Detail View is being processed</span>
+  </div>
+</div>
+
 <div class="container">
   <section class="selector_container">
     <div class="col-1-4">
@@ -5,7 +12,7 @@
         <div class="icon">
           <img src="../../assets/sample_img.png" width="80" height="80">
         </div>
-        <div class="title">
+        <div class="title-card">
           <h2>SUPPLIERS</h2>
         </div>
       </div>
@@ -15,17 +22,17 @@
         <div class="icon">
           <img src="../../assets/icon_cities.png" width="80" height="80">
         </div>
-        <div class="title">
+        <div class="title-card">
           <h2>CITIES</h2>
         </div>
       </div>
     </div><!-- No spaces
 ---><div class="col-9-12">
-      <div class="col-content">
+      <div class="col-content" (click)="goToViewDetails()">
         <div class="icon">
           <img src="../../assets/icon_view.png" width="80" height="80">
         </div>
-        <div class="title">
+        <div class="title-card">
           <h2>VIEW DETAILS</h2>
         </div>
       </div>

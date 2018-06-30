@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {UploadFileService} from "../upload-file.service";
 import {Router} from "@angular/router";
 import {HttpEventType, HttpResponse} from "@angular/common/http";
+import {DataService} from "../data.service";
 
 @Component({
   selector: 'app-load-files-cities',
@@ -26,9 +27,11 @@ export class LoadFilesCitiesComponent implements OnInit {
   isProcessing = false;
 
   constructor(private uploadService: UploadFileService,
-              private router: Router) { }
+              private router: Router,
+              private data: DataService) { }
 
   ngOnInit() {
+    this.data.changeMessage("cities");
   }
 
   selectFile(event, fileName) {

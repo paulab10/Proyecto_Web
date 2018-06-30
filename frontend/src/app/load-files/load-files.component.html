@@ -1,9 +1,13 @@
 <div class="modal" *ngIf="isProcessing">
   <div class="modal-content">
-    <span>Detail View is being processed</span>
+    <div class="loader"></div>
+    <span>{{modalText}}</span>
   </div>
 </div>
 
+<div class="title">
+  <h2>Upload files &mdash; suppliers</h2>
+</div>
 <div class="container">
   <div class="cards-container">
     <div class="row-container">
@@ -16,7 +20,7 @@
             <div class="icon">
               <img class="image-card" src="{{excelImg.fscr}}">
             </div>
-            <div class="title">
+            <div class="title-card">
               <h2>FSCR</h2>
             </div>
           </div>
@@ -32,7 +36,7 @@
             <div class="icon">
               <img class="image-card" src="{{excelImg.conectar}}">
             </div>
-            <div class="title">
+            <div class="title-card">
               <h2>CONECTAR</h2>
             </div>
           </div>
@@ -47,7 +51,7 @@
             <div class="icon">
               <img class="image-card" src="{{excelImg.enecon}}">
             </div>
-            <div class="title">
+            <div class="title-card">
               <h2>ENECON</h2>
             </div>
           </div>
@@ -65,7 +69,7 @@
             <div class="icon">
               <img class="image-card" src="{{excelImg.sicte}}">
             </div>
-            <div class="title">
+            <div class="title-card">
               <h2>SICTE</h2>
             </div>
           </div>
@@ -81,7 +85,7 @@
           <div class="icon">
             <img class="image-card" src="{{excelImg.dico}}">
           </div>
-          <div class="title">
+          <div class="title-card">
             <h2>DICO</h2>
           </div>
         </div>
@@ -96,7 +100,7 @@
           <div class="icon">
             <img class="image-card" src="{{excelImg.applus}}">
           </div>
-          <div class="title">
+          <div class="title-card">
             <h2>APPLUS</h2>
           </div>
         </div>
@@ -106,7 +110,7 @@
 
     <!-- Row 3 -->
     <div class="row-container">
-      <input type="file" id="input-excel-7" (change)="selectFile($event, 'detailview')" [disabled]="inputEnabled.detailview"
+      <input type="file" id="input-excel-7" (change)="selectFile($event, 'detailview')" [disabled]="false"
              accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
       <label for="input-excel-7" id="label-single">
         <!-- Card View -->
@@ -115,7 +119,7 @@
             <div class="icon">
               <img class="image-card" src="{{excelImg.detailview}}">
             </div>
-            <div class="title">
+            <div class="title-card">
               <h2>DETAIL VIEW</h2>
             </div>
           </div>

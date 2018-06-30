@@ -99,21 +99,36 @@ public class ParseSupplierMacro implements Runnable {
             }
         }
 
-
+        boolean isCheckingMap = false;
+        String key = "";
 
         while (rowIterator.hasNext()) {
             Row row = rowIterator.next();
 
             ProductsExcel tmpProductsExcel = new ProductsExcel();
 
-            tmpProductsExcel.setPoNumber(row.getCell(poNumberIndex).getStringCellValue());
-            tmpProductsExcel.setSprNumber((int)row.getCell(sprNumberIndex).getNumericCellValue());
-            tmpProductsExcel.setItemCode((int)row.getCell(itemCodeIndex).getNumericCellValue());
-            tmpProductsExcel.setQuantitySupplier(row.getCell(poQtyIndex).getNumericCellValue());
+            try {
+                tmpProductsExcel.setPoNumber(row.getCell(poNumberIndex).getStringCellValue());
+                tmpProductsExcel.setSprNumber((int)row.getCell(sprNumberIndex).getNumericCellValue());
+                tmpProductsExcel.setItemCode((int)row.getCell(itemCodeIndex).getNumericCellValue());
+                tmpProductsExcel.setQuantitySupplier(row.getCell(poQtyIndex).getNumericCellValue());
 
-            String key = tmpProductsExcel.getPoNumber() +
-                    tmpProductsExcel.getSprNumber() +
-                    tmpProductsExcel.getItemCode();
+                key = tmpProductsExcel.getPoNumber() +
+                        tmpProductsExcel.getSprNumber() +
+                        tmpProductsExcel.getItemCode();
+
+                isCheckingMap = true;
+
+                if ( resultsMap.get(key) != null) {
+                    tmpProductsExcel.addQuantitySupplier(resultsMap.get(key).getQuantitySupplier());
+                }
+            } catch (Exception e) {
+                if (isCheckingMap) {
+                    resultsMap.put(key, tmpProductsExcel);
+                    isCheckingMap =  false;
+                }
+                continue;
+            }
 
             resultsMap.put(key, tmpProductsExcel);
         }

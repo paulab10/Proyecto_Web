@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductExcel} from "../model/productExcel";
 import {UploadFileService} from "../upload-file.service";
-import {HttpResponse} from "@angular/common/http";
+import {DataService} from "../data.service";
 
 @Component({
-  selector: 'app-info-details',
-  templateUrl: './info-details.component.html',
-  styleUrls: ['./info-details.component.scss']
+  selector: 'app-view-details',
+  templateUrl: './view-details.component.html',
+  styleUrls: ['./view-details.component.scss']
 })
-export class InfoDetailsComponent implements OnInit {
+export class ViewDetailsComponent implements OnInit {
 
-  constructor(private uploadService: UploadFileService) { }
+  supplierActive: boolean;
+  citiesActive: boolean;
+
+  type: string;
 
   products: ProductExcel[];
 
@@ -37,8 +40,29 @@ export class InfoDetailsComponent implements OnInit {
     check: false
   };
 
+  constructor(private uploadService: UploadFileService,
+              private data: DataService) { }
 
   ngOnInit() {
+    this.data.currentMessage.subscribe(message => this.type = message);
+
+    if (this.type == "suppliers") {
+      this.supplierActive = true;
+
+      this.tabActive.sicte = true;
+      this.tableActive.available = true;
+      this.supplierName = 'sicte';
+
+      this.getAvailableList();
+    } else {
+      this.citiesActive = false;
+    }
+
+  }
+
+  onSuppliersClicked() {
+    this.supplierActive = true;
+
     this.tabActive.sicte = true;
     this.tableActive.available = true;
     this.supplierName = 'sicte';
@@ -52,11 +76,11 @@ export class InfoDetailsComponent implements OnInit {
 
     this.uploadService.getAvailableList(this.supplierName)
       .subscribe( products => {
-        if (products != null) {
-          this.products = products;
-          console.log(products);
-        }
-      },
+          if (products != null) {
+            this.products = products;
+            console.log(products);
+          }
+        },
         error => console.log("error: " + error),
         () => {
           this.closeModal();
@@ -70,11 +94,11 @@ export class InfoDetailsComponent implements OnInit {
 
     this.uploadService.getToCreateList(this.supplierName)
       .subscribe( products => {
-        if (products != null) {
-          this.products = products;
-          console.log(products);
-        }
-      },
+          if (products != null) {
+            this.products = products;
+            console.log(products);
+          }
+        },
         error => console.log("error: " + error),
         () => {
           this.closeModal();
@@ -88,11 +112,11 @@ export class InfoDetailsComponent implements OnInit {
 
     this.uploadService.getToAdjustList(this.supplierName)
       .subscribe( products => {
-        if (products != null) {
-          this.products = products;
-          console.log(products);
-        }
-      },
+          if (products != null) {
+            this.products = products;
+            console.log(products);
+          }
+        },
         error => console.log("error: " + error),
         () => {
           this.closeModal();
@@ -154,5 +178,4 @@ export class InfoDetailsComponent implements OnInit {
   closeModal() {
     this.isProcessing = false;
   }
-
 }

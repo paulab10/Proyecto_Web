@@ -1,11 +1,18 @@
 package com.huawei.fileshandlingapi.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProductsExcel {
     private String poNumber;
 
     private int sprNumber;
 
     private int itemCode;
+
+    private List<Double> quantityDVList;
+
+    private List<Double> billedQtyList;
 
     private double quantityDV;
 
@@ -16,6 +23,58 @@ public class ProductsExcel {
     private double qtyAccepted;
 
     private double billedQty;
+
+    private boolean isInProcess;
+
+    public ProductsExcel() {
+        quantityDVList = new ArrayList<>();
+        billedQtyList = new ArrayList<>();
+    }
+
+    public boolean isInProcess() {
+        return isInProcess;
+    }
+
+    public void setInProcess(boolean inProcess) {
+        isInProcess = inProcess;
+    }
+
+    public List<Double> getQuantityDVList() {
+        return quantityDVList;
+    }
+
+    public void setQuantityDVList(List<Double> quantityDVList) {
+        this.quantityDVList = quantityDVList;
+    }
+
+    public List<Double> getBilledQtyList() {
+
+        return billedQtyList;
+    }
+
+    public double getAllBilledQty() {
+        double result = 0;
+
+        for(Double val: billedQtyList) {
+            result += val;
+        }
+
+        return result;
+    }
+
+    public double getAllQuantityDV() {
+        double result = 0;
+
+        for(Double val: quantityDVList) {
+            result += val;
+        }
+
+        return result;
+    }
+
+    public void setBilledQtyList(List<Double> billedQtyList) {
+        this.billedQtyList = billedQtyList;
+    }
 
     public double getBilledQty() {
         return billedQty;
@@ -49,8 +108,14 @@ public class ProductsExcel {
         this.qtyAccepted = qtyAccepted;
     }
 
-    public void addQuantity(double quantity) {
-        this.quantityDV += quantity;
+    public void addQuantityDV(double quantity) {
+        this.quantityDVList.add(quantity);
+    }
+
+    public void addBilledQty(double quantity) { this.billedQtyList.add(quantity); }
+
+    public void addQuantitySupplier(double quantity) {
+        quantitySupplier += quantity;
     }
 
     public double getQuantityDV() {
