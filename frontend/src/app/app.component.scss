@@ -95,21 +95,79 @@ header {
 /* Huawei related */
 .footer-big {
   height: 240px;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
   background: black;
+}
+
+.footer-big > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 50%;
+
+  img {
+    width: 400px;
+    height: 100px;
+  }
+}
+
+.footer-social {
+  width: 30%;
 }
 
 /* Copyrights */
 .footer-little {
-  text-align: center;
-  padding: 1em 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  padding: 0 4em;
+  background-color: rgba(0, 0, 0, 1);
   color: #FFFFFF;
-  //font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
   font-weight: lighter;
   font-size: 13px;
   letter-spacing: 2px;
-  border-top-width: 2px;
+
+  div {
+    padding: 1.5em 0;
+    border-top: 1px solid #444444;
+  }
 }
 
+/* Icons Social Networks*/
+.icon-social {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5em;
+  display: inline-block;
+  background: rgba(50,50,50,0.7);
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+}
+
+.icon-social .fab {
+  line-height: 40px;
+}
+
+.social-fb:hover {
+  background: #3b5997;
+}
+
+.social-link:hover {
+  background: #0073b2;
+}
+
+.social-in:hover {
+  background: #e1306c;
+}
+
+.social-tw:hover {
+  background: #41b7d8;
+}
 
 
