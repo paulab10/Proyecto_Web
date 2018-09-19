@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7959f88-cbd4-45cd-a294-65c91c26bc53" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f7959f88-cbd4-45cd-a294-65c91c26bc53" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/backend/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -389,8 +386,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -554,6 +551,7 @@
       <workItem from="1534435448091" duration="841000" />
       <workItem from="1534540387827" duration="667000" />
       <workItem from="1535125932928" duration="519000" />
+      <workItem from="1537382720335" duration="187000" />
     </task>
     <task id="LOCAL-00001" summary="Excel Parsing updated">
       <created>1526775455927</created>
@@ -590,11 +588,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530379870845</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Last version">
+      <created>1537382814315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537382814315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176626000" />
+    <option name="totallyTimeSpent" value="176851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -606,7 +611,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.51758796" side_tool="true" visible="true" weight="0.30937973" />
+      <window_info id="Structure" order="1" sideWeight="0.5201005" side_tool="true" visible="true" weight="0.3139183" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39794168" />
@@ -619,7 +624,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32933104" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32933104" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3173242" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48241207" visible="true" weight="0.30937973" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4798995" visible="true" weight="0.3139183" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -653,7 +658,8 @@
     <MESSAGE value="First Integration Front with Back" />
     <MESSAGE value="Implemented File Status" />
     <MESSAGE value="update 30/06/2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 30/06/2018" />
+    <MESSAGE value="Last version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
